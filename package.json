@@ -4,12 +4,10 @@
   "description": "Basic Settings for Isomorphic React + Webpack",
   "main": "server.js",
   "scripts": {
-    "devtest": "webpack --config webpack-develop.config.js && NODE_ENV=development npm start & NODE_ENV=development node hotLoadServer.js --progress",
-    "dev": "NODE_ENV=development gulp build && NODE_ENV=development node server.js & NODE_ENV=development node hotLoadServer.js --progress",
-    "devold": "gulp build && NODE_ENV=development node_modules/.bin/supervisor --ignore public/ -e js server & NODE_ENV=development node hotLoadServer.js --progress",
+    "dev": "webpack --config webpack-develop.config.js && NODE_ENV=development npm start & NODE_ENV=development node hotLoadServer.js --progress",
     "build": "NODE_ENV=production gulp build",
     "publish": "NODE_ENV=production gulp publish",
-    "start": "node server.js",
+    "start": "node ./server/server.js",
     "test": "eslint ./"
   },
   "dependencies": {
