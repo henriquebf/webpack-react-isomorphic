@@ -1,6 +1,6 @@
 'use strict';
 
-require('babel/register');
+//require('babel/register');
 
 var express = require('express');
 var appController = require('./api/controllers/app_controller.js');
