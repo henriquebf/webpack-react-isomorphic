@@ -18,10 +18,6 @@ function Layout (html, props) {
     markup += 		'<meta http-equiv="Content-Type" content="text/html; charset=utf-8">';
     markup += 		'<meta http-equiv="X-UA-Compatible" content="IE=Edge">';
     markup += 		'<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">';
-    markup +=       "<!--[if lte IE 9]>";
-    markup += 			"<script src='" + assetsUrl + "vendors/classListShim.js'></script>";
-    markup += 		"<![endif]-->";
-    markup += 		'<script src="' + assetsUrl + 'vendors/modernizr.custom.07618.js"></script>';
 
     if (process.env.NODE_ENV === 'production') {
         markup += '<link rel="stylesheet" href="' + clientCss + '">';
@@ -31,7 +27,6 @@ function Layout (html, props) {
     markup += 	'<body>';
     markup += 		'<div id="app">' + html + '</div>';
     markup += 		'<script>window.props = ' + JSON.stringify(props) + ';</script>';
-    markup += 		'<script src="' + assetsUrl + 'vendors/picturefill-2.3.1.min.js"></script>';
     markup += 		'<script src="' + clientJs + '" async></script>';
     markup += 	'</body>';
     markup += '</html>';
