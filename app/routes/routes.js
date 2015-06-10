@@ -2,12 +2,12 @@ import React from 'react';
 //
 import Router, {Route, NotFoundRoute, DefaultRouter, RouteHandler, Link} from 'react-router';
 //
-import App from '../pages/App/index.js';
+import Website from '../pages/Website/index.js';
 //
-import Home from '../pages/App/screens/Template/screens/Home/index.js';
+import Home from '../pages/Website/screens/Template/screens/Home/index.js';
 
 export default (
-    <Route handler={App}>
+    <Route handler={Website}>
         <Route path="/" name="Home" handler={Home} addHandlerKey={true} />
     </Route>
 );

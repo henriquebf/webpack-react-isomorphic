@@ -4,7 +4,7 @@
   "description": "Basic Settings for Isomorphic React + Webpack",
   "main": "server.js",
   "scripts": {
-    "dev": "webpack --config webpack-develop.config.js && NODE_ENV=development npm start & NODE_ENV=development node hotLoadServer.js --progress",
+    "dev": "webpack --config webpack-develop.config.js && NODE_ENV=development node ./server/server.js & NODE_ENV=development node hotLoadServer.js --progress",
     "start": "node ./server/server.js",
     "test": "eslint ./"
   },

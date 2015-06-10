@@ -24,7 +24,14 @@ app.use(function (req, res, next) {
 
 // Start App
 
-var server = app.listen(process.env.PORT || 3000);
+var port = process.env.PORT || 3000;
+
+var server = app.listen(port, function (err, result) {
+    if (err) {
+        console.log(err);
+    }
+    console.log('Server Listening at localhost:' + port);
+});
 
 
 

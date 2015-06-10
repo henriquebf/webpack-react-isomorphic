@@ -1,9 +1,9 @@
 /**
- * @name Intro
+ * @name Test
  * @component
  *
  * @description
- * - Intro Section
+ * - Test Page
  */
 
 import React from 'react';
@@ -12,8 +12,8 @@ export default React.createClass({
 
     render() {
         return (
-            <div className="intro">
-                Intro
+            <div className="test">
+                Test
             </div>
         )
     }
